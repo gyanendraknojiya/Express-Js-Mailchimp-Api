@@ -30,11 +30,11 @@ app.post('/', function (req, res) {
             }
         ]
     };
-    const url = 'https://us18.api.mailchimp.com/3.0/lists/9318876c79';
+    const url = 'https://us18.api.mailchimp.com/3.0/lists/93****79'; //list id
     const jsonData = JSON.stringify(data);
     const options = {
         method: 'POST',
-        auth: 'gyan:06466eb69bd0e36a1a5aa4e0c602afa3d-us18',
+        auth: 'gyan:06466e**********************d-us18', // api key
     };
     const request = https.request(url, options, function (response) {
         response.on('data', function (data) {
@@ -59,8 +59,3 @@ app.post('/failure', function (req, res){
 app.listen(3000);
 
 
-// api key
-// 06466eb69bd0e36a1a5aa4e0c602afa3-us18
-
-// unique id 
-// 9318876c79
